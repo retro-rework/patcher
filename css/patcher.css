@@ -1,0 +1,139 @@
+/* Retro Rework Patcher — styles.
+ * Pour s'accorder au site : modifier uniquement les variables ci-dessous
+ * (ou les redéfinir dans la page hôte en mode intégré, sur #rr-patcher).
+ */
+:root {
+	--rrp-bg: #0f1220;            /* fond de la page du patcheur */
+	--rrp-surface: #181c30;       /* cartes des étapes */
+	--rrp-border: #2b3150;
+	--rrp-text: #e9ecf8;
+	--rrp-muted: #a3a9c4;
+	--rrp-accent: #4f8cff;        /* boutons principaux */
+	--rrp-accent-text: #ffffff;
+	--rrp-ok: #4cc38a;
+	--rrp-error-bg: #3a1621;
+	--rrp-error-border: #e5536b;
+	--rrp-info-bg: #13294b;
+	--rrp-radius: 12px;
+	--rrp-font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	--rrp-max-width: 720px;
+	color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+	:root:not([data-theme="dark"]) {
+		--rrp-bg: #f6f7fb; --rrp-surface: #ffffff; --rrp-border: #dde1ee; --rrp-text: #171a2b; --rrp-muted: #5a6180;
+		--rrp-accent: #2f6fe8; --rrp-ok: #16834f; --rrp-error-bg: #fdecef; --rrp-error-border: #d13a55; --rrp-info-bg: #e8f0ff;
+		color-scheme: light;
+	}
+}
+:root[data-theme="light"] {
+	--rrp-bg: #f6f7fb; --rrp-surface: #ffffff; --rrp-border: #dde1ee; --rrp-text: #171a2b; --rrp-muted: #5a6180;
+	--rrp-accent: #2f6fe8; --rrp-ok: #16834f; --rrp-error-bg: #fdecef; --rrp-error-border: #d13a55; --rrp-info-bg: #e8f0ff;
+	color-scheme: light;
+}
+
+html, body { margin: 0; background: var(--rrp-bg); }
+#rr-patcher { color: var(--rrp-text); font-family: var(--rrp-font); font-size: 16px; line-height: 1.5; padding: 16px; }
+.rrp { max-width: var(--rrp-max-width); margin: 0 auto; }
+.rrp *, .rrp *::before, .rrp *::after { box-sizing: border-box; }
+
+.rrp-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.rrp-title { font-size: 1.35rem; line-height: 1.25; margin: 0; flex: 1 1 260px; }
+.rrp-langs { display: flex; gap: 4px; }
+.rrp-lang { font: inherit; font-size: .8rem; font-weight: 600; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--rrp-border); background: transparent; color: var(--rrp-muted); cursor: pointer; }
+.rrp-lang.is-active { background: var(--rrp-accent); border-color: var(--rrp-accent); color: var(--rrp-accent-text); }
+.rrp-intro { margin: 8px 0 4px; }
+.rrp-privacy { margin: 0 0 16px; font-size: .9rem; color: var(--rrp-muted); }
+
+.rrp-step { background: var(--rrp-surface); border: 1px solid var(--rrp-border); border-radius: var(--rrp-radius); padding: 14px 16px; margin: 0 0 12px; opacity: .6; }
+.rrp-step.is-current, .rrp-step.is-done { opacity: 1; }
+.rrp-step.is-current { border-color: var(--rrp-accent); }
+.rrp-step-head { display: flex; align-items: center; gap: 10px; }
+.rrp-step-head h3 { margin: 0; font-size: 1.05rem; }
+.rrp-num { flex: none; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: .9rem; border: 2px solid var(--rrp-border); }
+.rrp-step.is-current .rrp-num { border-color: var(--rrp-accent); color: var(--rrp-accent); }
+.rrp-step.is-done .rrp-num { background: var(--rrp-ok); border-color: var(--rrp-ok); color: #fff; }
+.rrp-step-body { padding-left: 38px; }
+.rrp-step-body:empty { display: none; }
+.rrp-step-body > p { margin: 8px 0; }
+
+.rrp-help, .rrp-muted { color: var(--rrp-muted); font-size: .92rem; }
+.rrp-ok { color: var(--rrp-ok); font-weight: 600; }
+.rrp-strong { font-weight: 600; }
+.rrp-prereq { border-left: 3px solid var(--rrp-accent); padding-left: 12px; margin-top: 8px; }
+.rrp-link { color: var(--rrp-accent); }
+
+.rrp-file { position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden; }
+.rrp-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 18px; margin: 6px 0; border-radius: 10px; font: inherit; font-weight: 600; text-decoration: none; cursor: pointer; border: 1px solid transparent; max-width: 100%; text-align: center; overflow-wrap: anywhere; }
+.rrp-btn-primary { background: var(--rrp-accent); color: var(--rrp-accent-text); }
+.rrp-btn-ghost { background: transparent; color: var(--rrp-text); border-color: var(--rrp-border); }
+.rrp-btn[disabled] { opacity: .6; cursor: progress; }
+.rrp-btn:focus-visible, .rrp-lang:focus-visible, .rrp-file:focus-visible + .rrp-btn { outline: 3px solid var(--rrp-accent); outline-offset: 2px; }
+.rrp-restart { margin-top: 4px; }
+
+.rrp-alert { border-radius: var(--rrp-radius); padding: 10px 14px; margin: 0 0 12px; }
+.rrp-alert p { margin: 4px 0; }
+.rrp-alert-error { background: var(--rrp-error-bg); border: 1px solid var(--rrp-error-border); }
+.rrp-alert-error p:first-child { font-weight: 700; }
+.rrp-alert-info { background: var(--rrp-info-bg); border: 1px solid var(--rrp-accent); }
+
+.rrp-tech { margin-top: 14px; font-size: .8rem; color: var(--rrp-muted); }
+.rrp-tech summary { cursor: pointer; }
+.rrp-tech-row { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0; }
+.rrp-tech-row span { min-width: 90px; font-weight: 600; }
+.rrp-tech-row code { overflow-wrap: anywhere; }
+.rrp-foot { font-size: .85rem; margin-top: 12px; }
+.rrp-foot a { color: var(--rrp-muted); }
+
+@media (max-width: 480px) {
+	#rr-patcher { padding: 12px; }
+	.rrp-title { font-size: 1.15rem; }
+	.rrp-step { padding: 12px; }
+	.rrp-step-body { padding-left: 0; }
+	.rrp-btn { width: 100%; }
+}
+
+/* Retro Rework — identité cyan, présentation uniquement. */
+:root, :root[data-theme="dark"], :root[data-theme="light"] {
+ --rrp-bg:#0b0d0f; --rrp-surface:#15191d; --rrp-border:#46515b;
+ --rrp-text:#f5f7fa; --rrp-muted:#bbc6cf; --rrp-accent:#56dcf2;
+ --rrp-accent-text:#071317; --rrp-ok:#94d6ac;
+ --rrp-error-bg:#29191c; --rrp-error-border:#f28b96; --rrp-info-bg:#12252b;
+ --rrp-radius:12px; --rrp-font:"Helvetica Neue",Arial,sans-serif; color-scheme:dark;
+}
+body { min-height:100vh; }
+.rr-site-head, .rr-site-foot { max-width:800px; margin:auto; padding:24px; }
+.rr-site-head { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; border-bottom:1px solid var(--rrp-border); }
+.rr-brand { color:var(--rrp-text); font:800 24px/1.2 var(--rrp-font); letter-spacing:-.7px; text-decoration:none; }
+.rr-brand span { color:var(--rrp-accent); }
+.rr-return, .rr-site-foot a, .rr-skip { color:var(--rrp-accent); font:inherit; text-underline-offset:4px; }
+.rr-return { font:600 14px/1.5 var(--rrp-font); padding:12px 0; }
+.rr-kicker { max-width:720px; margin:36px auto 20px; font:500 13px/1.5 var(--rrp-font); letter-spacing:2px; text-transform:uppercase; color:var(--rrp-accent); }
+#rr-patcher { padding:0; }
+main { padding:0 24px; }
+.rrp-title { font-size:clamp(1.45rem,3vw,1.85rem); line-height:1.22; font-weight:700; }
+.rrp-head { gap:18px; }
+.rrp-langs { flex-shrink:0; }
+.rrp-lang { min-width:44px; min-height:44px; border-radius:8px; }
+.rrp-intro { margin:16px 0 10px; color:var(--rrp-muted); }
+.rrp-privacy { padding:14px 16px; margin-bottom:24px; border-radius:8px; background:#102126; color:#c8e6eb; }
+.rrp-step { opacity:1; padding:20px; margin-bottom:16px; }
+.rrp-step:not(.is-current):not(.is-done) { border-color:#353f47; }
+.rrp-step.is-done .rrp-num { color:#092014; }
+.rrp-btn { min-height:48px; border-radius:8px; }
+.rrp-btn-primary:hover { background:#8be9f7; }
+.rrp-btn-ghost:hover { border-color:var(--rrp-accent); }
+.rrp-file:focus-visible { outline:none; }
+.rrp-step:has(.rrp-file:focus-visible) label { outline:3px solid var(--rrp-accent); outline-offset:4px; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline:3px solid var(--rrp-accent); outline-offset:4px; }
+.rr-site-foot { color:var(--rrp-muted); font:14px/1.6 var(--rrp-font); padding-top:28px; padding-bottom:40px; }
+.rr-site-foot p { margin:8px 0; }
+.rr-skip { position:absolute; top:-100px; left:16px; padding:12px; background:var(--rrp-bg); z-index:5; }
+.rr-skip:focus { top:8px; }
+@media(max-width:480px) {
+ main { padding:0 16px; } .rr-site-head,.rr-site-foot { padding:20px 16px; }
+ .rr-kicker { margin-top:28px; } .rrp-head { gap:14px; }
+ .rrp-title { flex-basis:100%; } .rrp-step { padding:16px; }
+ .rrp-privacy { padding:12px; } .rrp-btn { width:100%; }
+}
+@media(max-width:480px) { .rr-site-head { flex-direction:column; align-items:flex-start; } }
