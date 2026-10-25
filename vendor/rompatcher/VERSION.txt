@@ -1,0 +1,3 @@
+RomPatcher.js v3.2.1 (tag v3.2.1, commit 91e522e247f709e894761157ccba3189004d0859)
+https://github.com/marcrobledo/RomPatcher.js — MIT License, (c) Marc Robledo.
+Fichiers copiés sans modification : rom-patcher-js/RomPatcher.js, rom-patcher-js/modules/*.js (sans bz2/ ni zip.js).
