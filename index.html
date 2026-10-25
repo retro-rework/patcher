@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Retro Rework Patcher</title>
+	<meta name="robots" content="noindex">
+	<link rel="stylesheet" href="css/patcher.css">
+</head>
+<body>
+ <a class="rr-skip" href="#patcher-main" data-fr="Aller au patcheur" data-en="Skip to patcher">Aller au patcheur</a>
+ <header class="rr-site-head"><a class="rr-brand" href="https://www.retrorework.com/" aria-label="Retro Rework">Retro <span>Rework</span></a><a class="rr-return" data-return href="https://www.retrorework.com/" data-fr="← Retour au site" data-en="← Back to website">← Retour au site</a></header>
+ <main id="patcher-main"><h1 class="rr-kicker" data-fr="Patcheur Retro Rework" data-en="Retro Rework Patcher">Patcheur Retro Rework</h1>
+	<!-- Usage : index.html?game=super-r-type[&lang=fr|en]  (configuration : games/<id>.json) -->
+	<div id="rr-patcher"></div>
+	</main>
+ <footer class="rr-site-foot"><p><a data-release href="https://github.com/retro-rework/" data-fr="Télécharger le patch sur GitHub ↗" data-en="Download the patch on GitHub ↗">Télécharger le patch sur GitHub ↗</a></p><p data-fr="Aucune ROM fournie. Utilisez votre propre copie du jeu." data-en="No ROM provided. Use your own copy of the game.">Aucune ROM fournie. Utilisez votre propre copie du jeu.</p><p data-fr="Aucun compte ni envoi de fichier nécessaire." data-en="No account or file upload required.">Aucun compte ni envoi de fichier nécessaire.</p></footer>
+ <noscript>JavaScript est nécessaire pour appliquer le patch. / JavaScript is required to apply the patch.</noscript>
+
+	<!-- RomPatcher.js v3.2.1 — MIT, (c) Marc Robledo — https://github.com/marcrobledo/RomPatcher.js -->
+	<script src="vendor/rompatcher/modules/HashCalculator.js"></script>
+	<script src="vendor/rompatcher/modules/BinFile.js"></script>
+	<script src="vendor/rompatcher/modules/RomPatcher.format.ips.js"></script>
+	<script src="vendor/rompatcher/modules/RomPatcher.format.ups.js"></script>
+	<script src="vendor/rompatcher/modules/RomPatcher.format.aps_n64.js"></script>
+	<script src="vendor/rompatcher/modules/RomPatcher.format.aps_gba.js"></script>
+	<script src="vendor/rompatcher/modules/RomPatcher.format.bps.js"></script>
+	<script src="vendor/rompatcher/modules/RomPatcher.format.rup.js"></script>
+	<script src="vendor/rompatcher/modules/RomPatcher.format.ppf.js"></script>
+	<script src="vendor/rompatcher/modules/RomPatcher.format.bdf.js"></script>
+	<script src="vendor/rompatcher/modules/RomPatcher.format.pmsr.js"></script>
+	<script src="vendor/rompatcher/modules/RomPatcher.format.vcdiff.js"></script>
+	<script src="vendor/rompatcher/RomPatcher.js"></script>
+	<!-- Retro Rework -->
+	<script src="js/rr-sha256.js"></script>
+	<script src="js/rr-i18n.js"></script>
+	<script src="js/rr-patcher.js"></script>
+<script src="js/rr-page.js"></script>
+</body>
+</html>
