@@ -1,0 +1,169 @@
+{
+  "id": "sega-rally-3",
+  "game": "SEGA Rally 3",
+  "version": "1.0",
+  "system": "Sega Europa-R (TeknoParrot)",
+  "mode": "folder",
+  "marker": {
+    "path": "Rally/Rally.exe",
+    "sha256": "8eb7bdf01b8dc30ba40a43ac3d4065b9035cc59d58dd01b3c03113a1403171b5",
+    "patchedSha256": "7310c1d50e2b81aad91d6c599d66d17fd913f953d1c2c8d540df6397776089f9"
+  },
+  "expectedText": {
+    "fr": "SEGA Rally 3 (2008) [Sega Europa-R] [TP], version d'origine",
+    "en": "SEGA Rally 3 (2008) [Sega Europa-R] [TP], original version"
+  },
+  "output": {
+    "fileName": "SEGA Rally 3 - Retro Rework v1.0 - fichiers.zip"
+  },
+  "files": [
+    {
+      "path": "Rally/Rally.exe",
+      "op": "bps",
+      "source": {
+        "size": 3334144,
+        "sha256": "8eb7bdf01b8dc30ba40a43ac3d4065b9035cc59d58dd01b3c03113a1403171b5"
+      },
+      "patch": {
+        "url": "patches/sega-rally-3/Rally.exe.bps",
+        "size": 3855,
+        "sha256": "7a44775db125f01f532131cea87724a59eacbbb4c1bb8ad8d770348be8ed7cc6"
+      },
+      "target": {
+        "size": 3334144,
+        "sha256": "7310c1d50e2b81aad91d6c599d66d17fd913f953d1c2c8d540df6397776089f9"
+      }
+    },
+    {
+      "path": "Rally/ArcadeDatabase/arcadedatabase_xdata.sbf",
+      "op": "bps",
+      "source": {
+        "size": 28128,
+        "sha256": "19cc7aa1ea2852aac2e9d5f44bef1d90a9effc0ffbb96961f1c9ac037c004399"
+      },
+      "patch": {
+        "url": "patches/sega-rally-3/arcadedatabase_xdata.sbf.bps",
+        "size": 32,
+        "sha256": "b4c44e1da4afb2abe086703858ff2b8249289cd48acf3a89255c2315367b98cc"
+      },
+      "target": {
+        "size": 28128,
+        "sha256": "af73d33b82fc25ebbc987e516bfdc3ef04531292f93aae160ddb0a0bec2ff2f9"
+      }
+    },
+    {
+      "path": "Rally/system/system_data.sbf",
+      "op": "bps",
+      "source": {
+        "size": 205622,
+        "sha256": "e24fe86434e1d9d0aad250f3bc75878b5fcf476e7c1d380b7279ff9bb5b24901"
+      },
+      "patch": {
+        "url": "patches/sega-rally-3/system_data.sbf.bps",
+        "size": 197818,
+        "sha256": "c0f0d955c5bf8ac26e34c6d99dfeb877547f9840c7f2bb46a581e1afc05735b8"
+      },
+      "target": {
+        "size": 205848,
+        "sha256": "cf9a33c40fa4c02c7414c80d13b93cd72f2c86ad6efa58b95b235c485659590b"
+      }
+    },
+    {
+      "path": "Rally/Particles/carparticleeffectdata_xdata.sbf",
+      "op": "bps",
+      "source": {
+        "size": 1089634,
+        "sha256": "7f82dbd610a8a89c14d1ee532d3cabee94f9271a6f670657e9097d08eb7dff9c"
+      },
+      "patch": {
+        "url": "patches/sega-rally-3/carparticleeffectdata_xdata.sbf.bps",
+        "size": 1095395,
+        "sha256": "7f7effa86b614ffc5503524ee4357130fa2d2f4a43cdfa8cfaa64e96ee7a7caa"
+      },
+      "target": {
+        "size": 1093280,
+        "sha256": "ed1ba1535600f4767f449326c09358770fe0931b9bdc21f96fbe801179409359"
+      }
+    },
+    {
+      "path": "Rally/Audio/EnglishStreamHeader.stm",
+      "op": "bps",
+      "source": {
+        "size": 241760,
+        "sha256": "7afc91df1068dde24202e5e5af4bf4ca25ac64114bf2654dfb64c93d9098ab04"
+      },
+      "patch": {
+        "url": "patches/sega-rally-3/EnglishStreamHeader.stm.bps",
+        "size": 47,
+        "sha256": "ea4e6284904379af94672fe3ed634130a395410c4540cad7fd8e43adca546693"
+      },
+      "target": {
+        "size": 241760,
+        "sha256": "77ae526c43670e4fd7e2101b7ff74203e34032d2b182116a0c5adfd01bdf835f"
+      }
+    },
+    {
+      "path": "Rally/frontend/PC/Videos/classic.wmv",
+      "op": "bps",
+      "source": {
+        "size": 10045860,
+        "sha256": "1cdb70a06314315d75f26cc9f9b376e433bdd70cca1a9bc32d5fe4d3916578ad"
+      },
+      "patch": {
+        "url": "patches/sega-rally-3/classic.wmv.bps",
+        "size": 9155095,
+        "sha256": "40d4e52c7668e486da9f282823713d7f0ccf9fff887e8c08a626d9369251eb80"
+      },
+      "target": {
+        "size": 9236660,
+        "sha256": "24ccfdaf80963755a862ed30b989103401333545a6dba5fe031f6ccbac09c3d9"
+      }
+    },
+    {
+      "path": "Rally/Audio/EnglishStreamData.stm",
+      "op": "append",
+      "source": {
+        "size": 447755200,
+        "sha256": "884dc14195c56ed1f11ced5a4e9a099bca1257629f49c25eb38be50fde489464"
+      },
+      "patch": {
+        "url": "patches/sega-rally-3/EnglishStreamData.stm.tail",
+        "size": 103232,
+        "sha256": "97c6a366beaf524c520cad26adf224f790e75cc95b4cf75584b3c0f527bd26e7"
+      },
+      "target": {
+        "size": 447858432,
+        "sha256": "b142bbd1bc87caafcc245af897ad9209c680045029411c0088820efacd2a5982"
+      }
+    },
+    {
+      "path": "Rally/frontend/PC/Videos/DES.wmv",
+      "op": "copy",
+      "from": "Rally/frontend/PC/Videos/classic.wmv",
+      "target": {
+        "size": 10045860,
+        "sha256": "1cdb70a06314315d75f26cc9f9b376e433bdd70cca1a9bc32d5fe4d3916578ad"
+      }
+    },
+    {
+      "path": "Rally/config.ini",
+      "op": "ini",
+      "section": "Graphics",
+      "set": {
+        "TrackQuality": "3",
+        "SceneQuality": "3",
+        "DrawDistanceQuality": "2"
+      },
+      "optional": true
+    },
+    {
+      "path": "Rally/ShellData/",
+      "op": "mkdir"
+    }
+  ],
+  "links": {
+    "credits": "",
+    "release": "https://github.com/retro-rework/patcher",
+    "gamePage": "https://www.retrorework.com/"
+  }
+}
