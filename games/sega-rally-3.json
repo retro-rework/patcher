@@ -1,20 +1,20 @@
 {
   "id": "sega-rally-3",
   "game": "SEGA Rally 3",
-  "version": "1.1",
+  "version": "1.2",
   "system": "Sega Europa-R (TeknoParrot)",
   "mode": "folder",
   "marker": {
     "path": "Rally/Rally.exe",
     "sha256": "8eb7bdf01b8dc30ba40a43ac3d4065b9035cc59d58dd01b3c03113a1403171b5",
-    "patchedSha256": "7b3cbec1e6beacaf83891283af95ae1ba9815f83c9e400a709aa63aa85f0f41f"
+    "patchedSha256": "20d198016a3ddda8df6e740bc16d725f83a53589f3739d3a3e442d2973123131"
   },
   "expectedText": {
     "fr": "SEGA Rally 3 (2008) [Sega Europa-R] [TP], version d'origine",
     "en": "SEGA Rally 3 (2008) [Sega Europa-R] [TP], original version"
   },
   "output": {
-    "fileName": "SEGA Rally 3 - Retro Rework v1.1 - fichiers.zip"
+    "fileName": "SEGA Rally 3 - Retro Rework v1.2 - fichiers.zip"
   },
   "files": [
     {
@@ -26,12 +26,12 @@
       },
       "patch": {
         "url": "patches/sega-rally-3/Rally.exe.bps",
-        "size": 4063,
-        "sha256": "c34af95a987baed28af8e84ec48435473f0ad60b44d5dbf351c9f9ca0aa82c8d"
+        "size": 4070,
+        "sha256": "3ad193793e3a5520921cb841546c4b731283868d5df4c643872cb71029b76a6b"
       },
       "target": {
         "size": 3334144,
-        "sha256": "7b3cbec1e6beacaf83891283af95ae1ba9815f83c9e400a709aa63aa85f0f41f"
+        "sha256": "20d198016a3ddda8df6e740bc16d725f83a53589f3739d3a3e442d2973123131"
       }
     },
     {
