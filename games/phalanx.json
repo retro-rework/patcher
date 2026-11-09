@@ -31,5 +31,8 @@
   "expectedText": {
     "fr": "Phalanx (USA)",
     "en": "Phalanx (USA)"
+  },
+  "links": {
+    "credits": "https://github.com/retro-rework/patcher/blob/main/patches/phalanx/CREDITS.md"
   }
 }
