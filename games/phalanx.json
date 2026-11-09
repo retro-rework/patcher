@@ -12,7 +12,7 @@
   "patch": {
     "url": "patches/phalanx/Phalanx-Retro-Rework-v1.1.bps",
     "format": "bps",
-    "sha256": "1c5a5af4a3a6b919a9519d96ceefd8a85660f52eab9aad843b988dcb66bb5052"
+    "sha256": "a9d467c340e11f4b5bb5beb6011a913ca60d780f78dd20a5f35a7ace708ad019"
   },
   "output": {
     "fileName": "Phalanx - Retro Rework v1.1.sfc",
@@ -20,16 +20,16 @@
   },
   "inputs": [
     {
-      "id": "dws",
-      "sha256": "3fe7283a2cbd04a1354b2f75ae242681cbb84ad25e0f15862afe909a45feab49",
+      "id": "usa",
+      "sha256": "0663330bc061f4b768fa1806610878ef6e6cf546f36041ae087c8e55703693b8",
       "label": {
-        "fr": "Phalanx DWS Edition (1 Mio)",
-        "en": "Phalanx DWS Edition (1 MiB)"
+        "fr": "Phalanx (USA), version originale",
+        "en": "Phalanx (USA), original version"
       }
     }
   ],
   "expectedText": {
-    "fr": "Phalanx DWS Edition",
-    "en": "Phalanx DWS Edition"
+    "fr": "Phalanx (USA)",
+    "en": "Phalanx (USA)"
   }
 }
