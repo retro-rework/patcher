@@ -1,0 +1,35 @@
+{
+  "id": "phalanx",
+  "game": "Phalanx",
+  "version": "1.1",
+  "system": "Super Nintendo",
+  "extensions": [
+    ".sfc",
+    ".smc"
+  ],
+  "maxRomSize": 4194816,
+  "copierHeader": 512,
+  "patch": {
+    "url": "patches/phalanx/Phalanx-Retro-Rework-v1.1.bps",
+    "format": "bps",
+    "sha256": "1c5a5af4a3a6b919a9519d96ceefd8a85660f52eab9aad843b988dcb66bb5052"
+  },
+  "output": {
+    "fileName": "Phalanx - Retro Rework v1.1.sfc",
+    "sha256": "45da44ea8ce2883316fe0fffb68d3c96a01e1f4a82682a623d6ad1c2e67a14c4"
+  },
+  "inputs": [
+    {
+      "id": "dws",
+      "sha256": "3fe7283a2cbd04a1354b2f75ae242681cbb84ad25e0f15862afe909a45feab49",
+      "label": {
+        "fr": "Phalanx DWS Edition (1 Mio)",
+        "en": "Phalanx DWS Edition (1 MiB)"
+      }
+    }
+  ],
+  "expectedText": {
+    "fr": "Phalanx DWS Edition",
+    "en": "Phalanx DWS Edition"
+  }
+}
