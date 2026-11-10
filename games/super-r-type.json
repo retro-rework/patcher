@@ -1,7 +1,7 @@
 {
   "id": "super-r-type",
   "game": "Super R-Type",
-  "version": "1.0",
+  "version": "1.1",
   "system": "Super Nintendo",
   "extensions": [
     ".sfc",
@@ -10,13 +10,13 @@
   "maxRomSize": 4194816,
   "copierHeader": 512,
   "patch": {
-    "url": "patches/super-r-type/Super-R-Type-Retro-Rework-v1.0.bps",
+    "url": "patches/super-r-type/Super-R-Type-Retro-Rework-v1.1.bps",
     "format": "bps",
-    "sha256": "27f6144674b12d2a97a4f51232e93ed1ce2659c4cae6967cbff88dce1ab5ff02"
+    "sha256": "726c4cef5ff37f4a917431ae81453a40df5090ab6d448717c3fe827e9fe94519"
   },
   "output": {
     "fileName": "Super R-Type - Retro Rework Edition.sfc",
-    "sha256": "0a5b3a784a0cceffeaf954812235341c8d3bb93b304158547ebb8347ab14257e"
+    "sha256": "c3a02dfdd5ea37f5a3b77684c91cc57a3e8d1d76b11011f8fcdda89853d4707d"
   },
   "inputs": [
     {
@@ -33,8 +33,8 @@
     "en": "Super R-Type (USA)"
   },
   "links": {
-    "credits": "https://github.com/retro-rework/super-r-type/blob/v1.0/CREDITS.md",
-    "release": "https://github.com/retro-rework/super-r-type/releases/tag/v1.0",
+    "credits": "https://github.com/retro-rework/super-r-type/blob/v1.1/CREDITS.md",
+    "release": "https://github.com/retro-rework/super-r-type/releases/tag/v1.1",
     "gamePage": "https://www.retrorework.com/blog-1-copy-1/Blog%20Post%20Title%20One-3zaa9-zlxng-fxphl-x9ds4"
   }
 }
