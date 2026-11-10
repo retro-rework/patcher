@@ -1,7 +1,7 @@
 {
   "id": "phalanx",
   "game": "Phalanx",
-  "version": "1.1",
+  "version": "1.2",
   "system": "Super Nintendo",
   "extensions": [
     ".sfc",
@@ -10,13 +10,13 @@
   "maxRomSize": 4194816,
   "copierHeader": 512,
   "patch": {
-    "url": "patches/phalanx/Phalanx-Retro-Rework-v1.1.bps",
+    "url": "patches/phalanx/Phalanx-Retro-Rework-v1.2.bps",
     "format": "bps",
-    "sha256": "a9d467c340e11f4b5bb5beb6011a913ca60d780f78dd20a5f35a7ace708ad019"
+    "sha256": "43a04c3dd4812ef0727345bcd408117840ab956ef631da5fa9af58cb5dfd3e32"
   },
   "output": {
-    "fileName": "Phalanx - Retro Rework v1.1.sfc",
-    "sha256": "45da44ea8ce2883316fe0fffb68d3c96a01e1f4a82682a623d6ad1c2e67a14c4"
+    "fileName": "Phalanx - Retro Rework v1.2.sfc",
+    "sha256": "499a6aafdbc513c1d9869a43b25c48cc47e3ed0a64975bb6db5b2653e0c8ad93"
   },
   "inputs": [
     {
